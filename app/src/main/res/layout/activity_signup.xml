@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signupbg"
+    android:orientation="vertical"
+    tools:context=".Signup">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/logo1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ReserveIT"
+        android:fontFamily="@font/xtrabold"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:gravity ="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="-10dp"
+        android:textStyle="italic"
+        />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/bluv">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIGN UP"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:layout_gravity="center"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/caprasimo"/>
+        <EditText
+            android:id="@+id/user"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_edittext"
+            android:layout_marginTop="50dp"
+            android:hint="Enter username"
+            android:paddingLeft="15dp"/>
+            <EditText
+                android:id="@+id/org"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"
+                android:textSize="17sp"
+                android:hint="Organization name"
+                android:paddingLeft="15dp"/>
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableEnd="@drawable/eye_closeresize"
+                android:drawablePadding="20dp"
+                android:hint="Password"
+                android:fontFamily="serif"
+                android:layout_gravity="center"
+                android:inputType="textPassword"
+                android:textSize="17sp"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"/>
+            <EditText
+                android:id="@+id/confirmpass"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableEnd="@drawable/eye_closeresize"
+                android:drawablePadding="20dp"
+                android:hint="Confirm password"
+                android:fontFamily="serif"
+                android:layout_gravity="center"
+                android:inputType="textPassword"
+                android:textSize="17sp"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"/>
+            <Button
+                android:id="@+id/signup"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/buttonlogin"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:text="SIGN UP"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account?"
+                android:layout_marginTop="480dp"
+                android:textSize="14dp"
+                android:textColor="@color/white"
+                android:fontFamily="serif"/>
+            <TextView
+                android:id="@+id/backtologin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log in here"
+                android:layout_marginTop="480dp"
+                android:textSize="14dp"
+                android:textColor="@color/blue"
+                android:fontFamily="serif"
+                />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
